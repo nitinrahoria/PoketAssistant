@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="msgTypeArray">
+        <item>"Select msg type"</item>
+        <item>"SMS"</item>
+        <item>"Email"</item>
+        <item>"WhatsApp"</item>
+    </string-array>
+</resources>

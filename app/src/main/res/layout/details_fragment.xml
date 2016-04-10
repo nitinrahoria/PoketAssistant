@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/footer"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="8dp">
+            <TextView
+                android:id="@+id/toTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="To : "
+                android:textColor="@android:color/holo_blue_light"/>
+            <TextView
+                android:id="@+id/sendingTo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/msgSubjectTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Subject : "
+                android:textColor="@android:color/holo_blue_light"/>
+            <TextView
+                android:id="@+id/msgSubject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/msgBodyTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Msg : "
+                android:textColor="@android:color/holo_blue_light"/>
+            <TextView
+                android:id="@+id/msgBody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status : "
+                android:id="@+id/statusTitle"
+                android:textColor="@android:color/holo_blue_light"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/status" />
+
+            <TextView
+                android:id="@+id/sendingByTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Will send on : "
+                android:textColor="@android:color/holo_blue_light"/>
+            <TextView
+                android:id="@+id/sendingBy"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/createdOnTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Created on : "
+                android:textColor="@android:color/holo_blue_light"/>
+            <TextView
+                android:id="@+id/createdOn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Close"/>
+        <Button
+            android:id="@+id/edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Edit"/>
+    </LinearLayout>
+</RelativeLayout>
